@@ -4,12 +4,14 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { MyComponentComponent } from './my-component/my-component.component';
+import { SelectAnimalComponent } from './select-animal/select-animal.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    MyComponentComponent
+    MyComponentComponent,
+    SelectAnimalComponent
   ],
   imports: [
     BrowserModule

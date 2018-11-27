@@ -23,4 +23,8 @@ export class MyComponentComponent implements OnInit {
     this.textButton = this.textButton === 'Enable' ? 'Disable' : 'Enable';
   }
 
+  showInConsole( e: Event) {
+    console.log('Press enter', e);
+  }
+
 }

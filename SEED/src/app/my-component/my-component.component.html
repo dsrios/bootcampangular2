@@ -10,3 +10,5 @@
 <input [disabled]="inputState" type="text">
 <br>
 <button (click)="changeState()" >{{ textButton }}</button>
+
+<input type="text" (keyup.enter)="showInConsole($event.target.value)">

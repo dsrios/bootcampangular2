@@ -7,7 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
+  imageRender;
+
   constructor() { }
+
+  shownImageSelect( image) {
+    this.imageRender = image;
+  }
 
   ngOnInit() {
   }

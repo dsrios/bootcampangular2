@@ -1,0 +1,18 @@
+<p>
+  peticion works!
+</p>
+
+<h1>
+  {{ info }}
+</h1>
+
+<pre>
+  {{ allInfo | json }}
+</pre>
+
+<hr>
+<h1>Imagen directa con el API</h1>
+<pre>{{ imageShow | async | json}}</pre>
+<pre>{{ (imageShow | async)?.image }}</pre>
+
+<img *ngIf="(imageShow | async).image as todo" [src]="todo" alt="">

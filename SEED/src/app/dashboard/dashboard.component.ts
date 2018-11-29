@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
+  textEmoji = '';
   imageRender;
 
   imageUrls = [
@@ -21,6 +22,10 @@ export class DashboardComponent implements OnInit {
 
   shownImageSelect( image) {
     this.imageRender = image;
+  }
+
+  setText( value: string) {
+    this.textEmoji = value;
   }
 
   ngOnInit() {

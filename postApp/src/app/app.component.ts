@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Post } from './post';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  info: Post;
+
+  selectedPostObject( objectPost ) {
+    this.info = objectPost;
+    console.log('ID SELECTED POST', this.info, objectPost);
+  }
+
 }
+

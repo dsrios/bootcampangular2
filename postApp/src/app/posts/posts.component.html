@@ -1,0 +1,7 @@
+<div class="post">
+  <ul>
+    <li *ngFor="let item of postList">
+      <button (click)="sendObject(item)" >{{ item.title }}</button>
+    </li>
+  </ul>
+</div>
